@@ -9,6 +9,10 @@ var app = angular.module("IssueTracker", ['ngRoute'])
                 templateUrl: 'public/signup/signup.html',
                 controller: 'SignupCtrl'
             })
+            .when('/login', {
+                templateUrl: 'public/login/login.html',
+                controller: 'LoginCtrl'
+            })
             .otherwise({
                 redirectTo: '/signup'
             })
