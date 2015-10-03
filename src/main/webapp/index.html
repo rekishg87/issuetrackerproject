@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Issue Tracker Project 2015</title>
+    <link href="vendor/bootstrap.min.css" rel="stylesheet"/>
+    <link href="homepage.css" rel="stylesheet"/>
+    <link href="public/login/login.css" rel="stylesheet"/>
+    <link href="public/signup/signup.css" rel="stylesheet"/>
 </head>
 <body>
-
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Issue Tracker</a>
+            <a class="navbar-brand" href="#/">Issue Tracker</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Link</a></li>
+                <li class="active"><a href="#/">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#/">Link</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown
-                        <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
@@ -51,13 +52,14 @@
     </div>
 </nav>
 
-<div ng-view></div>
+
+
+    <div ng-view></div>
 
 
 <!--AngularJS Version 1.4.7-->
 <script src="vendor/angular.js"></script>
 <script src="vendor/angular-route.js"></script>
-<link href="vendor/bootstrap.min.css" rel="stylesheet"/>
 <script src="app.js"></script>
 <script src="public/signup/SignupMod.js"></script>
 <script src="public/signup/SignupCtrl.js"></script>

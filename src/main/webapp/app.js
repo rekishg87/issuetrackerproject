@@ -13,7 +13,10 @@ var app = angular.module("IssueTracker", ['ngRoute'])
                 templateUrl: 'public/login/login.html',
                 controller: 'LoginCtrl'
             })
+            .when('/', {
+                templateUrl: 'homepage.html'
+            })
             .otherwise({
-                redirectTo: '/signup'
+                redirectTo: '/'
             })
     }]);
